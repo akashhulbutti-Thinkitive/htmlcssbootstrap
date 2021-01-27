@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Login Page </title>
+    <style>
+        body {
+            background-image: url("imges/background.jpg");
+            background-repeat: no-repeat, repeat;
+            background-size: cover;
+        }
+        
+        form {
+            background-image: url("imges/formbackground.jpg");
+            background-repeat: no-repeat, repeat;
+            background-size: cover;
+            margin: 10% 10%;
+            width: 250px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            text-align: center;
+            padding: 5% 5%;
+            border-radius: 2%;
+        }
+        
+        input {
+            width: max-content;
+            border: none;
+            border-bottom: 1px thin green;
+            outline: none;
+            height: 20px;
+        }
+        
+        button {
+            background-color: darkblue;
+            color: white;
+            padding: 10px 10px;
+            border: none;
+            border-radius: 5px;
+        }
+        
+        table {
+            margin: 0 -20px;
+            padding: 0 0;
+        }
+        
+        span {
+            font-size: smaller;
+        }
+        
+        span>a {
+            text-decoration: none;
+            text-anchor: end;
+        }
+    </style>
+</head>
+
+<body>
+    <div align="center" class="container">
+        <form method="get" action="#">
+            <table align="center" cellpadding="10">
+                <tr>
+                    <td>
+                        <label for="username">Username</label>
+                    </td>
+                    <td>
+                        <input type="text" value="" name="username" />
+                    </td>
+                </tr>
+                <tr>
+                    <td> <label for="password">Password</label></td>
+                    <td> <input type="password" value="" name="password" /></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td> <span>Forgot Password <a href="#">Click </a> Here</span></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button type="submit">SUBMIT</button></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+
+</html>
